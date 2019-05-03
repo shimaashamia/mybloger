@@ -18,6 +18,19 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+    .navbar-nav {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            </style>
 </head>
 <body>
     <div id="app">
@@ -30,9 +43,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 <div class="collapse navbar-collapse" id="app-navbar-collapse">
+
     <ul class="nav navbar-nav">
-        <li><a href="{{url('/home')}}">Home</a></li>
-        <li><a href="{{url('/view')}}">Articles</a></li>
+    
+        <li><a style=" color: #636b6f; padding: 14px 16px;  text-decoration: none" href="{{url('/home')}}">Home</a></li>
+
+        <li><a style=" color: #636b6f;  text-decoration: none;
+        
+        " href="{{url('/view')}}">Articles</a></li>
     </ul>
 </div>
 
